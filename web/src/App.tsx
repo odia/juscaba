@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import searchImg from './images/system-search-symbolic.svg';
 import './App.css';
 import Box from './Box';
@@ -28,10 +28,11 @@ function App() {
     setSearch(event.target.value)
   }
 
-  const handleSelect = (e: ExpedienteData) => (event: React.MouseEvent<HTMLLinkElement>) => {
+  const handleSelect = (e: ExpedienteData) => (event: React.MouseEvent<HTMLAnchorElement>) => {
     event.preventDefault();
     setSelected(e)
   }
+
 
   useEffect(() => {
     (async () => {
@@ -50,7 +51,7 @@ function App() {
         setData({ ...data, [json.ExpId]: json })
       }
     })()
-  }, [expedientes])
+  }, [expedientes, data])
 
   return (
     <div className="App">
@@ -61,7 +62,7 @@ function App() {
         {(expedientes.length && data)
           ? expedientes.map(({ id }, i) =>
             <Button key={i}
-              onClick={(e: React.MouseEvent<HTMLElement>) => setSelected(data[id])}
+              onClick={handleSelect(data[id])}
               selected={selected === data[i]}>
               {id}
             </Button>)
@@ -71,7 +72,7 @@ function App() {
       <div title="buscar">
         <input type="search" id="search-input" name="search"
           onChange={handleChange} value={search} placeholder="buscar..." />
-        <img src={searchImg} />
+        <img src={searchImg} alt="Buscar" />
         {search}
       </div>
     </div >
