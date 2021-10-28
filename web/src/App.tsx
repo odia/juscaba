@@ -55,6 +55,12 @@ function App() {
       <Box id="title">
         <h1>Buscador de Actuaciones de O.D.I.A.</h1>
       </Box>
+      <div title="buscar">
+        <input type="search" id="search-input" name="search"
+          onChange={handleChange} value={search} placeholder="buscar..." />
+        <img src={searchImg} alt="Buscar" />
+        {search}
+      </div>
       <Section title="expedientes">
         {(expedientes.length && data)
           ? expedientes.map(({ id }, i) =>
@@ -66,12 +72,6 @@ function App() {
           : <p>loading...</p>}
         {selected !== undefined && <Expediente {...selected} />}
       </Section>
-      <div title="buscar">
-        <input type="search" id="search-input" name="search"
-          onChange={handleChange} value={search} placeholder="buscar..." />
-        <img src={searchImg} alt="Buscar" />
-        {search}
-      </div>
     </div >
   );
 }
