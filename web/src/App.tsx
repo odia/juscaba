@@ -34,24 +34,21 @@ function App() {
   }
 
 
-  useEffect(() => {
+  useState(() => {
+    // FIXME: this is called twice
     (async () => {
       const res = await fetch(`${process.env.PUBLIC_URL}/data/expedientes.json`);
-      const json = await res.json();
-      setExpedientes(json)
-    })();
-  }, [])
-
-  useEffect(() => {
-    if (!expedientes.length) return;
-    (async () => {
+      const expedientes = await res.json();
+      setExpedientes(expedientes)
+      const newData: ExpDataMap = {}
       for (let i = 0; i < expedientes.length; i++) {
         const res = await fetch(`${process.env.PUBLIC_URL}/data/${expedientes[i].file}.json`)
         const json = await res.json();
-        setData({ ...data, [json.ExpId]: json })
+        newData[json.ExpId] = json
       }
+      setData(newData)
     })()
-  }, [expedientes, data])
+  })
 
   return (
     <div className="App">
