@@ -2,9 +2,10 @@ import React from 'react';
 export interface DocumentData {
   URL: string
   content: string
+  nombre?: string
 }
 
-function Document(props: React.Props<DocumentData>) {
-  return (<p>document</p>)
+function Document(props: React.PropsWithChildren<DocumentData>) {
+  return (<p>{props.nombre || 'Documento sin título'}</p>)
 }
 export default Document
