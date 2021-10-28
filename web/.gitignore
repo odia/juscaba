@@ -22,3 +22,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .#*
+
+/ts/index.json
+/ts/node_modules/
+/ts/yarn.lock
