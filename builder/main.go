@@ -14,16 +14,18 @@ import (
 )
 
 type arguments struct {
-	jsonPath    string
-	fm          *shared.FileManager
-	exp         *shared.Expediente
-	parseImages bool
+	blacklistRegex string
+	jsonPath       string
+	fm             *shared.FileManager
+	exp            *shared.Expediente
+	parseImages    bool
 }
 
 func parseArguments() (*arguments, error) {
 	var pdfsPath, expId string
 	var err error
 	args := arguments{}
+	flag.StringVar(&args.blacklistRegex, "blacklist", "", "regex of urls to ignore (e.g.: \"(cedulas.*667442)|(actuaciones.*349676)\")")
 	flag.StringVar(&args.jsonPath, "json", "", "json destination path")
 	flag.StringVar(&pdfsPath, "pdfs", "", "pdfs destination path")
 	flag.StringVar(&expId, "expediente", "", "expediente identifier (e.g.: \"182908/2020-0\")")
@@ -56,12 +58,11 @@ func main() {
 		"actuaciones": len(args.exp.Actuaciones),
 	}).Printf("finished")
 
-	blacklist := os.Getenv("BLACKLIST_REGEX")
-	if blacklist != "" {
-		_, err := regexp.Match(blacklist, []byte{})
+	if args.blacklistRegex != "" {
+		_, err := regexp.Match(args.blacklistRegex, []byte{})
 		if err != nil {
 			log.WithFields(log.Fields{
-				"regex": blacklist,
+				"regex": args.blacklistRegex,
 				"error": err.Error(),
 			}).Error("failed to parse blacklist regex")
 			os.Exit(1)
@@ -70,8 +71,8 @@ func main() {
 
 	for _, act := range args.exp.Actuaciones {
 		for _, doc := range act.Documentos {
-			if blacklist != "" {
-				if match, _ := regexp.Match(blacklist, []byte(doc.URL)); match {
+			if args.blacklistRegex != "" {
+				if match, _ := regexp.Match(args.blacklistRegex, []byte(doc.URL)); match {
 					log.WithFields(log.Fields{
 						"url": doc.URL,
 					}).Info("skipping blacklisted URL")

@@ -10,7 +10,7 @@ do
     exp=${!i}
     exp_filename=${!i/\//-}
 
-    ./builder "-json=/tmp/juscaba/${exp_filename}.json" -pdfs=/tmp/juscaba/pdfs "-expediente=${exp}" -images=true
+    ./builder "-json=/tmp/juscaba/${exp_filename}.json" -pdfs=/tmp/juscaba/pdfs "-expediente=${exp}" -images=true "-blacklist=${BLACKLIST_REGEX:-}"
 
     pushd ts
     yarn run ts-node create-index.ts /tmp/juscaba/${exp_filename}.json /tmp/juscaba/${exp_filename}-index.json
