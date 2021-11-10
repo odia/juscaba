@@ -16,8 +16,10 @@ do
     popd
 done
 
+pushd web
 yarn
 yarn build
+popd
 
 mkdir -p /tmp/juscaba/web
 rm -rf /tmp/juscaba/web/build
