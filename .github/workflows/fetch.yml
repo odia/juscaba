@@ -26,5 +26,7 @@ jobs:
         run: docker build . --file Dockerfile --tag juscaba
       - name: Run the container
         run: docker run -v $(pwd):/tmp/juscaba juscaba ./run.sh $EXPEDIENTES
+      - name: Find json files
+        run: find . -name \*.json
       - name: Create expedientes.json
         run: echo ${EXPEDIENTES_JSON} > web/build/data/expedientes.json
