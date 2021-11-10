@@ -9,7 +9,7 @@ do
     exp=${!i}
     exp_filename=${!i/\//-}
 
-    ./builder "-json=/tmp/juscaba/web/public/data/${exp_filename}.json" -pdfs=/tmp/juscaba/pdfs "-expediente=${exp}" -images=${PROCESS_IMAGES:-} "-blacklist=${BLACKLIST_REGEX:-}"
+    ./builder "-json=/tmp/juscaba/web/public/data/${exp_filename}.json" -pdfs=/tmp/juscaba/pdfs "-expediente=${exp}" -images=${PROCESS_IMAGES:-true} "-blacklist=${BLACKLIST_REGEX:-}"
 
     pushd ts
     yarn run ts-node create-index.ts /tmp/juscaba/web/public/data/${exp_filename}.json /tmp/juscaba/web/public/data/${exp_filename}-index.json
