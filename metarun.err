@@ -1,0 +1,1337 @@
++++ dirname -- ./run.sh
+++ cd -- .
+++ pwd
++ SCRIPT_DIR=/app
++ mkdir -p /tmp/juscaba/pdfs
++ mkdir -p /tmp/juscaba/web
++ mkdir -p /app/web/public/data
++ (( i=1 ))
++ (( i<=2 ))
++ exp=182908/2020-0
++ exp_filename=182908-2020-0
++ ./builder -json=/tmp/juscaba/182908-2020-0.json -pdfs=/tmp/juscaba/pdfs -expediente=182908/2020-0 -images=true '-blacklist=(cedulas.*667442)|(actuaciones.*349676)'
+time="2021-11-09T06:48:10Z" level=info msg=arguments expediente=182908/2020-0 json=/tmp/juscaba/182908-2020-0.json parseImages=true pdfs=/tmp/juscaba/pdfs
+time="2021-11-09T06:48:11Z" level=info msg="Expediente found!" expediente=182908/2020-0
+time="2021-11-09T06:48:11Z" level=info msg="getting actuaciones" page=0
+time="2021-11-09T06:48:16Z" level=info msg="getting actuaciones" page=1
+time="2021-11-09T06:48:18Z" level=info msg="getting actuaciones" page=2
+time="2021-11-09T06:48:20Z" level=info msg=finished actuaciones=143 expediente="&{0xc00021a100 [0xc0001e80a0 0xc0001e8140 0xc0001e81e0 0xc0001e8280 0xc0001e8320 0xc0001e83c0 0xc0001e8460 0xc0001e8500 0xc0001e85a0 0xc0001e8640 0xc0001e86e0 0xc0001e8780 0xc0001e8820 0xc0001e8960 0xc0001e8a00 0xc0001e8aa0 0xc0001e8b40 0xc0001e8be0 0xc0001e8c80 0xc0001e8d20 0xc0001e8dc0 0xc0001e8e60 0xc0001e8f00 0xc0001e8fa0 0xc0001e9040 0xc0001e90e0 0xc0001e9180 0xc0001e9220 0xc0001e92c0 0xc0001e9360 0xc0001e9400 0xc0001e94a0 0xc0001e9540 0xc0001e95e0 0xc0001e9680 0xc0001e9720 0xc0001e97c0 0xc0001e9860 0xc0001e9900 0xc0001e99a0 0xc0001e9a40 0xc0001e9ae0 0xc0001e9b80 0xc0001e9c20 0xc0001e9cc0 0xc0001e9d60 0xc0001e9e00 0xc0001e9ea0 0xc0001e9f40 0xc0001f2000 0xc0001f20a0 0xc0001f2140 0xc0001f21e0 0xc0001f2280 0xc0001f2320 0xc0001f23c0 0xc0001f2460 0xc0001f2500 0xc0001f25a0 0xc0001f2640 0xc0001f26e0 0xc0001f2780 0xc0001f2820 0xc0001f28c0 0xc0001f2960 0xc0001f2a00 0xc0001f2aa0 0xc0001f2b40 0xc0001f2be0 0xc0001f2c80 0xc0001f2d20 0xc0001f2dc0 0xc0001f2e60 0xc0001f2f00 0xc0001f2fa0 0xc0001f3040 0xc0001f30e0 0xc0001f3180 0xc0001f3220 0xc0001f32c0 0xc0001f3360 0xc0001f3400 0xc0001f34a0 0xc0001f3540 0xc0001f35e0 0xc0001f3680 0xc0001f3720 0xc0001f37c0 0xc0001f3860 0xc0001f3900 0xc0001f39a0 0xc0001f3a40 0xc0001f3ae0 0xc0001f3b80 0xc0001f3c20 0xc0001f3cc0 0xc0001f3d60 0xc0001f3e00 0xc0001f3ea0 0xc0001f3f40 0xc00007e000 0xc00007e0a0 0xc00007e140 0xc00007e1e0 0xc00007e280 0xc00007e320 0xc00007e3c0 0xc00007e460 0xc00007e500 0xc00007e5a0 0xc00007e640 0xc00007e6e0 0xc00007e780 0xc00007e8c0 0xc00007e960 0xc00007ea00 0xc00007eaa0 0xc00007eb40 0xc00007ebe0 0xc00007ec80 0xc00007ed20 0xc00007edc0 0xc00007ee60 0xc00007ef00 0xc00007efa0 0xc00007f040 0xc00007f0e0 0xc00007f180 0xc00007f220 0xc00007f2c0 0xc00007f360 0xc00007f400 0xc00007f4a0 0xc00007f540 0xc00007f5e0 0xc00007f680 0xc00007f720 0xc00007f7c0 0xc00007f860 0xc00007f900 0xc00007f9a0 0xc00007fa40 0xc00007fae0]}"
+time="2021-11-09T06:48:20Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:0,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:20Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:20Z" level=error msg="failed to wait for pdftotext" error="exit status 1"
+time="2021-11-09T06:48:20Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37684260,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:20Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:20Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:20Z" level=info msg="getting pdf images" directory=/tmp/extracttext3807111827 path=/tmp/extracttext3807111827/content
+time="2021-11-09T06:48:20Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:21Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:21Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37683488,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:21Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:21Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:21Z" level=info msg="getting pdf images" directory=/tmp/extracttext3576298944 path=/tmp/extracttext3576298944/content
+time="2021-11-09T06:48:21Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:21Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37678280,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:21Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:21Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:21Z" level=info msg="getting pdf images" directory=/tmp/extracttext3088834330 path=/tmp/extracttext3088834330/content
+time="2021-11-09T06:48:22Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:22Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:22Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:%2237669468%22,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:37678280,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:22Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:22Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:22Z" level=info msg="getting pdf images" directory=/tmp/extracttext459528963 path=/tmp/extracttext459528963/content
+time="2021-11-09T06:48:22Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:22Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:22Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37677939,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:22Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:22Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:22Z" level=info msg="getting pdf images" directory=/tmp/extracttext3666001122 path=/tmp/extracttext3666001122/content
+time="2021-11-09T06:48:23Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:23Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:23Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37677744,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:23Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:23Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:23Z" level=info msg="getting pdf images" directory=/tmp/extracttext1489733438 path=/tmp/extracttext1489733438/content
+time="2021-11-09T06:48:23Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:23Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:23Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:%2237669468%22,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:37677744,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:23Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:23Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:23Z" level=info msg="getting pdf images" directory=/tmp/extracttext2660161182 path=/tmp/extracttext2660161182/content
+time="2021-11-09T06:48:23Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:23Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:24Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37677743,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:24Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:24Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:24Z" level=info msg="getting pdf images" directory=/tmp/extracttext2147229470 path=/tmp/extracttext2147229470/content
+time="2021-11-09T06:48:24Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:24Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:24Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:%2237669468%22,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:37677743,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:24Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:24Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:24Z" level=info msg="getting pdf images" directory=/tmp/extracttext955072286 path=/tmp/extracttext955072286/content
+time="2021-11-09T06:48:24Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:24Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:24Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37677742,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:24Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:24Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:24Z" level=info msg="getting pdf images" directory=/tmp/extracttext2213024046 path=/tmp/extracttext2213024046/content
+time="2021-11-09T06:48:24Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:25Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:25Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:%2237669468%22,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:37677742,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:25Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:25Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:25Z" level=info msg="getting pdf images" directory=/tmp/extracttext3586156572 path=/tmp/extracttext3586156572/content
+time="2021-11-09T06:48:25Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:25Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:25Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37677741,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:25Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:25Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:25Z" level=info msg="getting pdf images" directory=/tmp/extracttext1134000008 path=/tmp/extracttext1134000008/content
+time="2021-11-09T06:48:25Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:25Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:25Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:%2237669468%22,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:37677741,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:25Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:25Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:25Z" level=info msg="getting pdf images" directory=/tmp/extracttext2331033966 path=/tmp/extracttext2331033966/content
+time="2021-11-09T06:48:25Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:26Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:26Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37677739,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:26Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:26Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:26Z" level=info msg="getting pdf images" directory=/tmp/extracttext887497003 path=/tmp/extracttext887497003/content
+time="2021-11-09T06:48:26Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:26Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:26Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:%2237669468%22,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:37677739,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:26Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:26Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:26Z" level=info msg="getting pdf images" directory=/tmp/extracttext332341626 path=/tmp/extracttext332341626/content
+time="2021-11-09T06:48:26Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:26Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:27Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37677714,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:27Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:27Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:27Z" level=info msg="getting pdf images" directory=/tmp/extracttext3609698686 path=/tmp/extracttext3609698686/content
+time="2021-11-09T06:48:27Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:27Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:27Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:%2237669468%22,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:37677714,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:27Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:27Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:27Z" level=info msg="getting pdf images" directory=/tmp/extracttext1633644359 path=/tmp/extracttext1633644359/content
+time="2021-11-09T06:48:27Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:27Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:27Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37677710,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:27Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:27Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:27Z" level=info msg="getting pdf images" directory=/tmp/extracttext2883330934 path=/tmp/extracttext2883330934/content
+time="2021-11-09T06:48:27Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:28Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:28Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:%2237669468%22,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:37677710,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:28Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:28Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:28Z" level=info msg="getting pdf images" directory=/tmp/extracttext332850205 path=/tmp/extracttext332850205/content
+time="2021-11-09T06:48:28Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:28Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:28Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37677715,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:28Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:28Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:28Z" level=info msg="getting pdf images" directory=/tmp/extracttext2813676343 path=/tmp/extracttext2813676343/content
+time="2021-11-09T06:48:28Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:29Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:29Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:%2237669468%22,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:37677715,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:29Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:29Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:29Z" level=info msg="getting pdf images" directory=/tmp/extracttext2029454582 path=/tmp/extracttext2029454582/content
+time="2021-11-09T06:48:29Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:29Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:29Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37677712,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:29Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:29Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:29Z" level=info msg="getting pdf images" directory=/tmp/extracttext3035194442 path=/tmp/extracttext3035194442/content
+time="2021-11-09T06:48:29Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:29Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:29Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:%2237669468%22,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:37677712,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:29Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:29Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:29Z" level=info msg="getting pdf images" directory=/tmp/extracttext1847107844 path=/tmp/extracttext1847107844/content
+time="2021-11-09T06:48:29Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:30Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:30Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37677708,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:30Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:30Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:30Z" level=info msg="getting pdf images" directory=/tmp/extracttext2667170323 path=/tmp/extracttext2667170323/content
+time="2021-11-09T06:48:30Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:30Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:30Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:%2237669468%22,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:37677708,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:30Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:30Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:30Z" level=info msg="getting pdf images" directory=/tmp/extracttext200885305 path=/tmp/extracttext200885305/content
+time="2021-11-09T06:48:30Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:30Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:30Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37677716,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:30Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:30Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:30Z" level=info msg="getting pdf images" directory=/tmp/extracttext419587089 path=/tmp/extracttext419587089/content
+time="2021-11-09T06:48:31Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:31Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:31Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:%2237669468%22,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:37677716,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:31Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:31Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:31Z" level=info msg="getting pdf images" directory=/tmp/extracttext3868752265 path=/tmp/extracttext3868752265/content
+time="2021-11-09T06:48:31Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:31Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:31Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37677709,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:31Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:31Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:31Z" level=info msg="getting pdf images" directory=/tmp/extracttext2306757140 path=/tmp/extracttext2306757140/content
+time="2021-11-09T06:48:31Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:31Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:32Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:%2237669468%22,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:37677709,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:32Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:32Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:32Z" level=info msg="getting pdf images" directory=/tmp/extracttext1428306820 path=/tmp/extracttext1428306820/content
+time="2021-11-09T06:48:32Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:32Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:32Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37677737,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:32Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:32Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:32Z" level=info msg="getting pdf images" directory=/tmp/extracttext3294438984 path=/tmp/extracttext3294438984/content
+time="2021-11-09T06:48:32Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:32Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:32Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:%2237669468%22,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:37677737,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:32Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:32Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:32Z" level=info msg="getting pdf images" directory=/tmp/extracttext1761744334 path=/tmp/extracttext1761744334/content
+time="2021-11-09T06:48:32Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:33Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:33Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37669468,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:33Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:33Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:33Z" level=info msg="getting pdf images" directory=/tmp/extracttext621318723 path=/tmp/extracttext621318723/content
+time="2021-11-09T06:48:33Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:33Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:33Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:0,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:33Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:33Z" level=error msg="failed to wait for pdftotext" error="exit status 1"
+time="2021-11-09T06:48:33Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:0,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:33Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:33Z" level=error msg="failed to wait for pdftotext" error="exit status 1"
+time="2021-11-09T06:48:33Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:0,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:33Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:33Z" level=error msg="failed to wait for pdftotext" error="exit status 1"
+time="2021-11-09T06:48:33Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37671969,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:33Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:33Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:33Z" level=info msg="getting pdf images" directory=/tmp/extracttext1378389984 path=/tmp/extracttext1378389984/content
+time="2021-11-09T06:48:33Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:33Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/adjuntoPdf?filter=%7B%22aacId%22:1.826602e+06,%22expId%22:2600780,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:33Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:33Z" level=error msg="failed to wait for pdftotext" error="exit status 1"
+time="2021-11-09T06:48:33Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/adjuntoPdf?filter=%7B%22aacId%22:1.826603e+06,%22expId%22:2600780,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:33Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:33Z" level=error msg="failed to wait for pdftotext" error="exit status 1"
+time="2021-11-09T06:48:33Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37669853,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:33Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:33Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:33Z" level=info msg="getting pdf images" directory=/tmp/extracttext2808432343 path=/tmp/extracttext2808432343/content
+time="2021-11-09T06:48:34Z" level=info msg="reading image text" image=content-Nv_N.png
+time="2021-11-09T06:48:34Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:0,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:34Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:34Z" level=error msg="failed to wait for pdftotext" error="exit status 1"
+time="2021-11-09T06:48:34Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37664674,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:34Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:34Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:34Z" level=info msg="getting pdf images" directory=/tmp/extracttext2974866835 path=/tmp/extracttext2974866835/content
+time="2021-11-09T06:48:34Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:34Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:34Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37662889,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:34Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:34Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:34Z" level=info msg="getting pdf images" directory=/tmp/extracttext2599878939 path=/tmp/extracttext2599878939/content
+time="2021-11-09T06:48:34Z" level=info msg="reading image text" image=content-Nv_N.png
+time="2021-11-09T06:48:34Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37652086,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:34Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:34Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:34Z" level=info msg="getting pdf images" directory=/tmp/extracttext2338701670 path=/tmp/extracttext2338701670/content
+time="2021-11-09T06:48:34Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:35Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:35Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37659316,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:35Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:35Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:35Z" level=info msg="getting pdf images" directory=/tmp/extracttext1594611093 path=/tmp/extracttext1594611093/content
+time="2021-11-09T06:48:35Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:35Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:35Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/adjuntoPdf?filter=%7B%22aacId%22:1.821373e+06,%22expId%22:2600780,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:35Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:35Z" level=error msg="failed to wait for pdftotext" error="exit status 1"
+time="2021-11-09T06:48:35Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37658321,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:35Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:35Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:35Z" level=info msg="getting pdf images" directory=/tmp/extracttext23823530 path=/tmp/extracttext23823530/content
+time="2021-11-09T06:48:35Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:35Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:36Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37658284,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:36Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:36Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:36Z" level=info msg="getting pdf images" directory=/tmp/extracttext750196970 path=/tmp/extracttext750196970/content
+time="2021-11-09T06:48:36Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:36Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:36Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/adjuntoPdf?filter=%7B%22aacId%22:1.820969e+06,%22expId%22:2600780,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:36Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:36Z" level=error msg="failed to wait for pdftotext" error="exit status 1"
+time="2021-11-09T06:48:36Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37652042,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:36Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:36Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:36Z" level=info msg="getting pdf images" directory=/tmp/extracttext548905248 path=/tmp/extracttext548905248/content
+time="2021-11-09T06:48:36Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:37Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:37Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37649303,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:37Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:37Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:37Z" level=info msg="getting pdf images" directory=/tmp/extracttext2140124212 path=/tmp/extracttext2140124212/content
+time="2021-11-09T06:48:37Z" level=info msg="reading image text" image="content-N\xa6_N.png"
+time="2021-11-09T06:48:37Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37638431,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:37Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:37Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:37Z" level=info msg="getting pdf images" directory=/tmp/extracttext149636099 path=/tmp/extracttext149636099/content
+time="2021-11-09T06:48:37Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:37Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:37Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37640847,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:37Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:37Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:37Z" level=info msg="getting pdf images" directory=/tmp/extracttext865830651 path=/tmp/extracttext865830651/content
+time="2021-11-09T06:48:37Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:38Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:38Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37638170,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:38Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:38Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:38Z" level=info msg="getting pdf images" directory=/tmp/extracttext1181972593 path=/tmp/extracttext1181972593/content
+time="2021-11-09T06:48:38Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:38Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:38Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37637951,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:38Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:38Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:38Z" level=info msg="getting pdf images" directory=/tmp/extracttext3579858246 path=/tmp/extracttext3579858246/content
+time="2021-11-09T06:48:38Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:38Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:39Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37631458,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:39Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:39Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:39Z" level=info msg="getting pdf images" directory=/tmp/extracttext3412921925 path=/tmp/extracttext3412921925/content
+time="2021-11-09T06:48:39Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:39Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:39Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:%2237606045;37622329%22,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:37631458,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:39Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:39Z" level=error msg="failed to wait for pdftotext" error="exit status 1"
+time="2021-11-09T06:48:39Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37622329,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:39Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:39Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:39Z" level=info msg="getting pdf images" directory=/tmp/extracttext278216871 path=/tmp/extracttext278216871/content
+time="2021-11-09T06:48:39Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:39Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:39Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37626325,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:39Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:39Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:39Z" level=info msg="getting pdf images" directory=/tmp/extracttext2379537727 path=/tmp/extracttext2379537727/content
+time="2021-11-09T06:48:39Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:40Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:40Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37622089,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:40Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:40Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:40Z" level=info msg="getting pdf images" directory=/tmp/extracttext2775875004 path=/tmp/extracttext2775875004/content
+time="2021-11-09T06:48:40Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:40Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:40Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/adjuntoPdf?filter=%7B%22aacId%22:1.806888e+06,%22expId%22:2600780,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:40Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:40Z" level=error msg="failed to wait for pdftotext" error="exit status 1"
+time="2021-11-09T06:48:40Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/adjuntoPdf?filter=%7B%22aacId%22:1.806887e+06,%22expId%22:2600780,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:40Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:40Z" level=error msg="failed to wait for pdftotext" error="exit status 1"
+time="2021-11-09T06:48:40Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37623134,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:40Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:40Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:40Z" level=info msg="getting pdf images" directory=/tmp/extracttext3307466906 path=/tmp/extracttext3307466906/content
+time="2021-11-09T06:48:40Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:40Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:40Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37619955,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:40Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:40Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:40Z" level=info msg="getting pdf images" directory=/tmp/extracttext93502663 path=/tmp/extracttext93502663/content
+time="2021-11-09T06:48:40Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:41Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:41Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:%2237606045%22,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:37619955,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:41Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:41Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:41Z" level=info msg="getting pdf images" directory=/tmp/extracttext3486269329 path=/tmp/extracttext3486269329/content
+time="2021-11-09T06:48:41Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:42Z" level=info msg="reading image text" image="content- \xb1_ .jpg"
+time="2021-11-09T06:48:42Z" level=info msg="reading image text" image="content-N\xc6_N.png"
+time="2021-11-09T06:48:42Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37619958,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:42Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:42Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:42Z" level=info msg="getting pdf images" directory=/tmp/extracttext455513212 path=/tmp/extracttext455513212/content
+time="2021-11-09T06:48:42Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:42Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:42Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:%2237606045%22,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:37619958,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:42Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:42Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:42Z" level=info msg="getting pdf images" directory=/tmp/extracttext1192396127 path=/tmp/extracttext1192396127/content
+time="2021-11-09T06:48:43Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:43Z" level=info msg="reading image text" image="content- \xb1_ .jpg"
+time="2021-11-09T06:48:43Z" level=info msg="reading image text" image="content-N\xc6_N.png"
+time="2021-11-09T06:48:43Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37619943,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:43Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:43Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:43Z" level=info msg="getting pdf images" directory=/tmp/extracttext327897306 path=/tmp/extracttext327897306/content
+time="2021-11-09T06:48:43Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:43Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:44Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:%2237606045%22,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:37619943,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:44Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:44Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:44Z" level=info msg="getting pdf images" directory=/tmp/extracttext3394619903 path=/tmp/extracttext3394619903/content
+time="2021-11-09T06:48:44Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:44Z" level=info msg="reading image text" image="content- \xf1_ .jpg"
+time="2021-11-09T06:48:44Z" level=info msg="reading image text" image="content-N\x06_N.png"
+time="2021-11-09T06:48:44Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37619960,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:44Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:44Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:44Z" level=info msg="getting pdf images" directory=/tmp/extracttext1722311099 path=/tmp/extracttext1722311099/content
+time="2021-11-09T06:48:44Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:45Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:45Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:%2237606045%22,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:37619960,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:45Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:45Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:45Z" level=info msg="getting pdf images" directory=/tmp/extracttext3540989621 path=/tmp/extracttext3540989621/content
+time="2021-11-09T06:48:45Z" level=info msg="reading image text" image="content- A_ .jpg"
+time="2021-11-09T06:48:45Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:45Z" level=info msg="reading image text" image=content-NV_N.png
+time="2021-11-09T06:48:45Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37619952,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:45Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:45Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:45Z" level=info msg="getting pdf images" directory=/tmp/extracttext2168889939 path=/tmp/extracttext2168889939/content
+time="2021-11-09T06:48:45Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:46Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:46Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:%2237606045%22,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:37619952,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:46Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:46Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:46Z" level=info msg="getting pdf images" directory=/tmp/extracttext2111017065 path=/tmp/extracttext2111017065/content
+time="2021-11-09T06:48:46Z" level=info msg="reading image text" image="content- \x11_ .jpg"
+time="2021-11-09T06:48:46Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:46Z" level=info msg="reading image text" image="content-N&_N.png"
+time="2021-11-09T06:48:47Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37619962,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:47Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:47Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:47Z" level=info msg="getting pdf images" directory=/tmp/extracttext1263385020 path=/tmp/extracttext1263385020/content
+time="2021-11-09T06:48:47Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:47Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:47Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:%2237606045%22,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:37619962,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:47Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:47Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:47Z" level=info msg="getting pdf images" directory=/tmp/extracttext969097275 path=/tmp/extracttext969097275/content
+time="2021-11-09T06:48:47Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:47Z" level=info msg="reading image text" image="content- \xc1_ .jpg"
+time="2021-11-09T06:48:47Z" level=info msg="reading image text" image="content-N\xd6_N.png"
+time="2021-11-09T06:48:48Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37619528,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:48Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:48Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:48Z" level=info msg="getting pdf images" directory=/tmp/extracttext3635396567 path=/tmp/extracttext3635396567/content
+time="2021-11-09T06:48:48Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:48Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:48Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:%2237606045%22,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:37619528,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:48Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:48Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:48Z" level=info msg="getting pdf images" directory=/tmp/extracttext717146297 path=/tmp/extracttext717146297/content
+time="2021-11-09T06:48:48Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:48Z" level=info msg="reading image text" image="content- \x91_ .jpg"
+time="2021-11-09T06:48:49Z" level=info msg="reading image text" image="content-N\xa6_N.png"
+time="2021-11-09T06:48:49Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37619533,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:49Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:49Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:49Z" level=info msg="getting pdf images" directory=/tmp/extracttext2278287855 path=/tmp/extracttext2278287855/content
+time="2021-11-09T06:48:49Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:49Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:49Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:%2237606045%22,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:37619533,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:49Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:49Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:49Z" level=info msg="getting pdf images" directory=/tmp/extracttext348165023 path=/tmp/extracttext348165023/content
+time="2021-11-09T06:48:49Z" level=info msg="reading image text" image="content- \x01_ .jpg"
+time="2021-11-09T06:48:49Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:50Z" level=info msg="reading image text" image="content-N\x16_N.png"
+time="2021-11-09T06:48:50Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37619531,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:50Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:50Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:50Z" level=info msg="getting pdf images" directory=/tmp/extracttext3302238032 path=/tmp/extracttext3302238032/content
+time="2021-11-09T06:48:50Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:50Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:50Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:%2237606045%22,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:37619531,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:50Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:50Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:50Z" level=info msg="getting pdf images" directory=/tmp/extracttext489025375 path=/tmp/extracttext489025375/content
+time="2021-11-09T06:48:50Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:51Z" level=info msg="reading image text" image="content- a_ .jpg"
+time="2021-11-09T06:48:51Z" level=info msg="reading image text" image=content-Nv_N.png
+time="2021-11-09T06:48:51Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37619603,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:51Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:51Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:51Z" level=info msg="getting pdf images" directory=/tmp/extracttext2924583551 path=/tmp/extracttext2924583551/content
+time="2021-11-09T06:48:51Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:51Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:51Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:%2237606045%22,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:37619603,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:51Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:51Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:51Z" level=info msg="getting pdf images" directory=/tmp/extracttext436651079 path=/tmp/extracttext436651079/content
+time="2021-11-09T06:48:51Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:52Z" level=info msg="reading image text" image="content- \xa1_ .jpg"
+time="2021-11-09T06:48:52Z" level=info msg="reading image text" image="content-N\xb6_N.png"
+time="2021-11-09T06:48:52Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37619529,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:52Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:52Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:52Z" level=info msg="getting pdf images" directory=/tmp/extracttext710664636 path=/tmp/extracttext710664636/content
+time="2021-11-09T06:48:52Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:52Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:52Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:%2237606045%22,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:37619529,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:52Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:52Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:52Z" level=info msg="getting pdf images" directory=/tmp/extracttext1391619030 path=/tmp/extracttext1391619030/content
+time="2021-11-09T06:48:53Z" level=info msg="reading image text" image="content- Q_ .jpg"
+time="2021-11-09T06:48:53Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:53Z" level=info msg="reading image text" image=content-Nf_N.png
+time="2021-11-09T06:48:53Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37611074,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:53Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:53Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:53Z" level=info msg="getting pdf images" directory=/tmp/extracttext1693531348 path=/tmp/extracttext1693531348/content
+time="2021-11-09T06:48:53Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:53Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:54Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37609625,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:54Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:54Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:54Z" level=info msg="getting pdf images" directory=/tmp/extracttext3915728656 path=/tmp/extracttext3915728656/content
+time="2021-11-09T06:48:54Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:54Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:54Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37609495,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:54Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:54Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:54Z" level=info msg="getting pdf images" directory=/tmp/extracttext4066968739 path=/tmp/extracttext4066968739/content
+time="2021-11-09T06:48:54Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:54Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:54Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37610503,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:54Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:54Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:54Z" level=info msg="getting pdf images" directory=/tmp/extracttext2688598557 path=/tmp/extracttext2688598557/content
+time="2021-11-09T06:48:54Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:55Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:55Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37611644,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:55Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:55Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:55Z" level=info msg="getting pdf images" directory=/tmp/extracttext2108233083 path=/tmp/extracttext2108233083/content
+time="2021-11-09T06:48:55Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:55Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:55Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37611559,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:55Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:55Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:55Z" level=info msg="getting pdf images" directory=/tmp/extracttext2067858372 path=/tmp/extracttext2067858372/content
+time="2021-11-09T06:48:55Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:55Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:56Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37611605,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:56Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:56Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:56Z" level=info msg="getting pdf images" directory=/tmp/extracttext3184088555 path=/tmp/extracttext3184088555/content
+time="2021-11-09T06:48:56Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:56Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:56Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37609686,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:56Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:56Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:56Z" level=info msg="getting pdf images" directory=/tmp/extracttext1344850976 path=/tmp/extracttext1344850976/content
+time="2021-11-09T06:48:56Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:56Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:56Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37606045,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:56Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:56Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:56Z" level=info msg="getting pdf images" directory=/tmp/extracttext2583072846 path=/tmp/extracttext2583072846/content
+time="2021-11-09T06:48:56Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:57Z" level=info msg="reading image text" image="content- \xb1_ .jpg"
+time="2021-11-09T06:48:57Z" level=info msg="reading image text" image="content-N\xc6_N.png"
+time="2021-11-09T06:48:57Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37611533,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:57Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:57Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:57Z" level=info msg="getting pdf images" directory=/tmp/extracttext144626882 path=/tmp/extracttext144626882/content
+time="2021-11-09T06:48:57Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:57Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:57Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37611686,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:57Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:57Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:57Z" level=info msg="getting pdf images" directory=/tmp/extracttext3454799836 path=/tmp/extracttext3454799836/content
+time="2021-11-09T06:48:57Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:58Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:58Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37610202,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:58Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:58Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:58Z" level=info msg="getting pdf images" directory=/tmp/extracttext3930074991 path=/tmp/extracttext3930074991/content
+time="2021-11-09T06:48:58Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:58Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:58Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:0,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:58Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:58Z" level=error msg="failed to wait for pdftotext" error="exit status 1"
+time="2021-11-09T06:48:58Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37585043,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:58Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:58Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:58Z" level=info msg="getting pdf images" directory=/tmp/extracttext189384980 path=/tmp/extracttext189384980/content
+time="2021-11-09T06:48:58Z" level=info msg="reading image text" image="content-N\x16_N.png"
+time="2021-11-09T06:48:58Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:58Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37533601,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:58Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:58Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:58Z" level=info msg="getting pdf images" directory=/tmp/extracttext1354047667 path=/tmp/extracttext1354047667/content
+time="2021-11-09T06:48:58Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:59Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:59Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37527821,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:59Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:59Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:59Z" level=info msg="getting pdf images" directory=/tmp/extracttext325913430 path=/tmp/extracttext325913430/content
+time="2021-11-09T06:48:59Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:48:59Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:48:59Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37527649,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:48:59Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:48:59Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:48:59Z" level=info msg="getting pdf images" directory=/tmp/extracttext2819691052 path=/tmp/extracttext2819691052/content
+time="2021-11-09T06:48:59Z" level=info msg="reading image text" image=content-NF_N.png
+time="2021-11-09T06:49:00Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/adjuntoPdf?filter=%7B%22aacId%22:1.765149e+06,%22expId%22:2600780,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:00Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:00Z" level=error msg="failed to wait for pdftotext" error="exit status 1"
+time="2021-11-09T06:49:00Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37492618,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:00Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:00Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:00Z" level=info msg="getting pdf images" directory=/tmp/extracttext1326746077 path=/tmp/extracttext1326746077/content
+time="2021-11-09T06:49:00Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:49:00Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:49:00Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:%2237486448%22,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:37492618,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:00Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:00Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:00Z" level=info msg="getting pdf images" directory=/tmp/extracttext2449215617 path=/tmp/extracttext2449215617/content
+time="2021-11-09T06:49:00Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:49:00Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:49:00Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/cedulas/adjuntoPdf?filter=%7B%22aacId%22:349674,%22expId%22:2600780,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:00Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:01Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:01Z" level=info msg="getting pdf images" directory=/tmp/extracttext306216221 path=/tmp/extracttext306216221/content
+time="2021-11-09T06:49:04Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:49:07Z" level=info msg="reading image text" image="content- a_ .jpg"
+time="2021-11-09T06:49:07Z" level=info msg="reading image text" image="content- a_ a.jpg"
+time="2021-11-09T06:49:07Z" level=info msg="reading image text" image="content- a_ a\xa1.jpg"
+time="2021-11-09T06:49:07Z" level=info msg="reading image text" image="content- a\xa1_ .jpg"
+time="2021-11-09T06:49:08Z" level=info msg="reading image text" image=content-Nv_N.png
+time="2021-11-09T06:49:08Z" level=info msg="reading image text" image=content-Nv_Nv.png
+time="2021-11-09T06:49:08Z" level=info msg="reading image text" image="content-Nv\xa1_N.png"
+time="2021-11-09T06:49:09Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/cedulas/adjuntoPdf?filter=%7B%22aacId%22:349675,%22expId%22:2600780,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:09Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:09Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:09Z" level=info msg="getting pdf images" directory=/tmp/extracttext2000700481 path=/tmp/extracttext2000700481/content
+time="2021-11-09T06:49:09Z" level=info msg="reading image text" image="content- \xf1_ .jpg"
+time="2021-11-09T06:49:10Z" level=info msg="reading image text" image="content-N\x06_N.png"
+time="2021-11-09T06:49:11Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:11Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:11Z" level=info msg="getting pdf images" directory=/tmp/extracttext2204665725 path=/tmp/extracttext2204665725/content
+time="2021-11-09T06:49:11Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:49:12Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/cedulas/adjuntoPdf?filter=%7B%22aacId%22:349677,%22expId%22:2600780,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:12Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:12Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:12Z" level=info msg="getting pdf images" directory=/tmp/extracttext111843582 path=/tmp/extracttext111843582/content
+time="2021-11-09T06:49:12Z" level=info msg="reading image text" image="content- Q_ .jpg"
+time="2021-11-09T06:49:13Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:49:18Z" level=info msg="reading image text" image=content-Nf_N.png
+time="2021-11-09T06:49:18Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37486448,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:18Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:18Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:18Z" level=info msg="getting pdf images" directory=/tmp/extracttext2161556724 path=/tmp/extracttext2161556724/content
+time="2021-11-09T06:49:18Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:49:18Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:49:18Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37484564,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:18Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:18Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:18Z" level=info msg="getting pdf images" directory=/tmp/extracttext3988640010 path=/tmp/extracttext3988640010/content
+time="2021-11-09T06:49:18Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:49:19Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:49:19Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:%2237466752%22,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:37484564,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:19Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:19Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:19Z" level=info msg="getting pdf images" directory=/tmp/extracttext1741676812 path=/tmp/extracttext1741676812/content
+time="2021-11-09T06:49:19Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:49:19Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:49:19Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37481843,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:19Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:19Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:19Z" level=info msg="getting pdf images" directory=/tmp/extracttext1513112165 path=/tmp/extracttext1513112165/content
+time="2021-11-09T06:49:19Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:49:19Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:49:20Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:%2237466752%22,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:37481843,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:20Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:20Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:20Z" level=info msg="getting pdf images" directory=/tmp/extracttext4115792498 path=/tmp/extracttext4115792498/content
+time="2021-11-09T06:49:20Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:49:20Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:49:20Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37466752,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:20Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:20Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:20Z" level=info msg="getting pdf images" directory=/tmp/extracttext172609293 path=/tmp/extracttext172609293/content
+time="2021-11-09T06:49:20Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:49:20Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:49:20Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37470137,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:20Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:20Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:20Z" level=info msg="getting pdf images" directory=/tmp/extracttext814734961 path=/tmp/extracttext814734961/content
+time="2021-11-09T06:49:20Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:49:21Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:49:21Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:%2237456483%22,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:37470137,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:21Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:21Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:21Z" level=info msg="getting pdf images" directory=/tmp/extracttext1366147808 path=/tmp/extracttext1366147808/content
+time="2021-11-09T06:49:21Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:49:21Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:49:21Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37470136,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:21Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:21Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:21Z" level=info msg="getting pdf images" directory=/tmp/extracttext3057620818 path=/tmp/extracttext3057620818/content
+time="2021-11-09T06:49:21Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:49:21Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:49:21Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:%2237456483%22,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:37470136,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:21Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:21Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:21Z" level=info msg="getting pdf images" directory=/tmp/extracttext3637281465 path=/tmp/extracttext3637281465/content
+time="2021-11-09T06:49:21Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:49:22Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:49:22Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37470134,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:22Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:22Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:22Z" level=info msg="getting pdf images" directory=/tmp/extracttext895863973 path=/tmp/extracttext895863973/content
+time="2021-11-09T06:49:22Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:49:22Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:49:22Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:%2237456483%22,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:37470134,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:22Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:22Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:22Z" level=info msg="getting pdf images" directory=/tmp/extracttext1135154880 path=/tmp/extracttext1135154880/content
+time="2021-11-09T06:49:22Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:49:22Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:49:23Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37470132,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:23Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:23Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:23Z" level=info msg="getting pdf images" directory=/tmp/extracttext1533579112 path=/tmp/extracttext1533579112/content
+time="2021-11-09T06:49:23Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:49:23Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:49:23Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:%2237456483%22,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:37470132,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:23Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:23Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:23Z" level=info msg="getting pdf images" directory=/tmp/extracttext1408146421 path=/tmp/extracttext1408146421/content
+time="2021-11-09T06:49:23Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:49:23Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:49:23Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37465242,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:23Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:23Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:23Z" level=info msg="getting pdf images" directory=/tmp/extracttext3489095419 path=/tmp/extracttext3489095419/content
+time="2021-11-09T06:49:24Z" level=info msg="reading image text" image="content- \x01_ .jpg"
+time="2021-11-09T06:49:24Z" level=info msg="reading image text" image="content-N\x16_N.png"
+time="2021-11-09T06:49:24Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/adjuntoPdf?filter=%7B%22aacId%22:1.737727e+06,%22expId%22:2600780,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:24Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:24Z" level=error msg="failed to wait for pdftotext" error="exit status 1"
+time="2021-11-09T06:49:24Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/adjuntoPdf?filter=%7B%22aacId%22:1.737728e+06,%22expId%22:2600780,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:24Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:24Z" level=error msg="failed to wait for pdftotext" error="exit status 1"
+time="2021-11-09T06:49:24Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/adjuntoPdf?filter=%7B%22aacId%22:1.737729e+06,%22expId%22:2600780,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:24Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:24Z" level=error msg="failed to wait for pdftotext" error="exit status 1"
+time="2021-11-09T06:49:24Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37464436,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:24Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:24Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:24Z" level=info msg="getting pdf images" directory=/tmp/extracttext3461020437 path=/tmp/extracttext3461020437/content
+time="2021-11-09T06:49:25Z" level=info msg="reading image text" image="content- q_ .jpg"
+time="2021-11-09T06:49:25Z" level=info msg="reading image text" image="content-N\x86_N.png"
+time="2021-11-09T06:49:25Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/adjuntoPdf?filter=%7B%22aacId%22:1.737443e+06,%22expId%22:2600780,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:25Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:25Z" level=error msg="failed to wait for pdftotext" error="exit status 1"
+time="2021-11-09T06:49:25Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37464427,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:25Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:25Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:25Z" level=info msg="getting pdf images" directory=/tmp/extracttext298531747 path=/tmp/extracttext298531747/content
+time="2021-11-09T06:49:25Z" level=info msg="reading image text" image="content- \x91_ .jpg"
+time="2021-11-09T06:49:26Z" level=info msg="reading image text" image="content-N\xa6_N.png"
+time="2021-11-09T06:49:26Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/adjuntoPdf?filter=%7B%22aacId%22:1.737434e+06,%22expId%22:2600780,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:26Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:26Z" level=error msg="failed to wait for pdftotext" error="exit status 1"
+time="2021-11-09T06:49:26Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37456483,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:26Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:26Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:26Z" level=info msg="getting pdf images" directory=/tmp/extracttext3542945121 path=/tmp/extracttext3542945121/content
+time="2021-11-09T06:49:26Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:49:26Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:49:26Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37449436,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:26Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:27Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:27Z" level=info msg="getting pdf images" directory=/tmp/extracttext570687121 path=/tmp/extracttext570687121/content
+time="2021-11-09T06:49:27Z" level=info msg="reading image text" image="content- \x81_ .jpg"
+time="2021-11-09T06:49:29Z" level=info msg="reading image text" image="content-N\x96_N.png"
+time="2021-11-09T06:49:29Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/adjuntoPdf?filter=%7B%22aacId%22:1.731887e+06,%22expId%22:2600780,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:29Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:29Z" level=error msg="failed to wait for pdftotext" error="exit status 1"
+time="2021-11-09T06:49:29Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37448185,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:29Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:29Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:29Z" level=info msg="getting pdf images" directory=/tmp/extracttext2295278526 path=/tmp/extracttext2295278526/content
+time="2021-11-09T06:49:30Z" level=info msg="reading image text" image="content- a_ .jpg"
+time="2021-11-09T06:49:34Z" level=info msg="reading image text" image=content-Nv_N.png
+time="2021-11-09T06:49:34Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/adjuntoPdf?filter=%7B%22aacId%22:1.731008e+06,%22expId%22:2600780,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:34Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:34Z" level=error msg="failed to wait for pdftotext" error="exit status 1"
+time="2021-11-09T06:49:34Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37447813,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:34Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:34Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:34Z" level=info msg="getting pdf images" directory=/tmp/extracttext4201966513 path=/tmp/extracttext4201966513/content
+time="2021-11-09T06:49:34Z" level=info msg="reading image text" image="content- A_ .jpg"
+time="2021-11-09T06:49:34Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:49:35Z" level=info msg="reading image text" image=content-NV_N.png
+time="2021-11-09T06:49:35Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/adjuntoPdf?filter=%7B%22aacId%22:1.730764e+06,%22expId%22:2600780,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:35Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:35Z" level=error msg="failed to wait for pdftotext" error="exit status 1"
+time="2021-11-09T06:49:35Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37433889,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:35Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:35Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:35Z" level=info msg="getting pdf images" directory=/tmp/extracttext3270067858 path=/tmp/extracttext3270067858/content
+time="2021-11-09T06:49:39Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:49:41Z" level=info msg="reading image text" image="content- \xf1_ .jpg"
+time="2021-11-09T06:49:42Z" level=info msg="reading image text" image="content- \xf1_ \xf1.jpg"
+time="2021-11-09T06:49:42Z" level=info msg="reading image text" image="content- \xf1_ \xf1\xbf.jpg"
+time="2021-11-09T06:49:42Z" level=info msg="reading image text" image="content- \xf1\xbf_ .jpg"
+time="2021-11-09T06:49:43Z" level=info msg="reading image text" image="content-N\x06_N\x06.png"
+time="2021-11-09T06:49:43Z" level=info msg="reading image text" image="content-N\x06_N.png"
+time="2021-11-09T06:49:43Z" level=info msg="reading image text" image="content-N\x06\xc0_N.png"
+time="2021-11-09T06:49:43Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37398072,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:43Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:43Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:43Z" level=info msg="getting pdf images" directory=/tmp/extracttext2466752747 path=/tmp/extracttext2466752747/content
+time="2021-11-09T06:49:43Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:49:44Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:49:44Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:%2237388969%22,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:37398072,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:44Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:44Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:44Z" level=info msg="getting pdf images" directory=/tmp/extracttext2464001752 path=/tmp/extracttext2464001752/content
+time="2021-11-09T06:49:44Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:49:44Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:49:44Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37398071,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:44Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:44Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:44Z" level=info msg="getting pdf images" directory=/tmp/extracttext2161864642 path=/tmp/extracttext2161864642/content
+time="2021-11-09T06:49:44Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:49:44Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:49:45Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:%2237388969%22,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:37398071,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:45Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:45Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:45Z" level=info msg="getting pdf images" directory=/tmp/extracttext168547956 path=/tmp/extracttext168547956/content
+time="2021-11-09T06:49:45Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:49:45Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:49:45Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37388969,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:45Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:45Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:45Z" level=info msg="getting pdf images" directory=/tmp/extracttext4194384240 path=/tmp/extracttext4194384240/content
+time="2021-11-09T06:49:45Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:49:45Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:49:45Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:0,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:45Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:45Z" level=error msg="failed to wait for pdftotext" error="exit status 1"
+time="2021-11-09T06:49:45Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37383394,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:45Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:45Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:45Z" level=info msg="getting pdf images" directory=/tmp/extracttext295697192 path=/tmp/extracttext295697192/content
+time="2021-11-09T06:49:45Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:49:46Z" level=info msg="reading image text" image="content-N\xe6_N.png"
+time="2021-11-09T06:49:46Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37327673,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:46Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:46Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:46Z" level=info msg="getting pdf images" directory=/tmp/extracttext1963804660 path=/tmp/extracttext1963804660/content
+time="2021-11-09T06:49:46Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:49:46Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:49:46Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/adjuntoPdf?filter=%7B%22aacId%22:1.684448e+06,%22expId%22:2600780,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:46Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:46Z" level=error msg="failed to wait for pdftotext" error="exit status 1"
+time="2021-11-09T06:49:46Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/adjuntoPdf?filter=%7B%22aacId%22:1.684447e+06,%22expId%22:2600780,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:46Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:46Z" level=error msg="failed to wait for pdftotext" error="exit status 1"
+time="2021-11-09T06:49:46Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37263996,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:46Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:46Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:46Z" level=info msg="getting pdf images" directory=/tmp/extracttext3799702160 path=/tmp/extracttext3799702160/content
+time="2021-11-09T06:49:47Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:49:47Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:49:47Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:%2237255850%22,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:37263996,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:47Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:47Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:47Z" level=info msg="getting pdf images" directory=/tmp/extracttext3200063089 path=/tmp/extracttext3200063089/content
+time="2021-11-09T06:49:47Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:49:47Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:49:47Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37263535,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:47Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:47Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:47Z" level=info msg="getting pdf images" directory=/tmp/extracttext2011539882 path=/tmp/extracttext2011539882/content
+time="2021-11-09T06:49:47Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:49:48Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:49:48Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:%2237255850%22,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:37263535,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:48Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:48Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:48Z" level=info msg="getting pdf images" directory=/tmp/extracttext3768551303 path=/tmp/extracttext3768551303/content
+time="2021-11-09T06:49:48Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:49:48Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:49:48Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37255850,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:48Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:48Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:48Z" level=info msg="getting pdf images" directory=/tmp/extracttext3681722460 path=/tmp/extracttext3681722460/content
+time="2021-11-09T06:49:48Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:49:48Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:49:48Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37252317,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:48Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:48Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:48Z" level=info msg="getting pdf images" directory=/tmp/extracttext3047645521 path=/tmp/extracttext3047645521/content
+time="2021-11-09T06:49:49Z" level=info msg="reading image text" image="content- \xa1_ .jpg"
+time="2021-11-09T06:49:49Z" level=info msg="reading image text" image="content-N\xb6_N.png"
+time="2021-11-09T06:49:49Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/adjuntoPdf?filter=%7B%22aacId%22:1.653835e+06,%22expId%22:2600780,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:49Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:49Z" level=error msg="failed to wait for pdftotext" error="exit status 1"
+time="2021-11-09T06:49:49Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37243057,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:49Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:49Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:49Z" level=info msg="getting pdf images" directory=/tmp/extracttext2732121915 path=/tmp/extracttext2732121915/content
+time="2021-11-09T06:49:49Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:49:49Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:49:49Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/adjuntoPdf?filter=%7B%22aacId%22:1.652665e+06,%22expId%22:2600780,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:49Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:49Z" level=error msg="failed to wait for pdftotext" error="exit status 1"
+time="2021-11-09T06:49:49Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/adjuntoPdf?filter=%7B%22aacId%22:1.652664e+06,%22expId%22:2600780,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:49Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:49Z" level=error msg="failed to wait for pdftotext" error="exit status 1"
+time="2021-11-09T06:49:49Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/adjuntoPdf?filter=%7B%22aacId%22:1.652663e+06,%22expId%22:2600780,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:49Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:49Z" level=error msg="failed to wait for pdftotext" error="exit status 1"
+time="2021-11-09T06:49:49Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/adjuntoPdf?filter=%7B%22aacId%22:1.652662e+06,%22expId%22:2600780,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:49Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:49Z" level=error msg="failed to wait for pdftotext" error="exit status 1"
+time="2021-11-09T06:49:49Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/adjuntoPdf?filter=%7B%22aacId%22:1.652661e+06,%22expId%22:2600780,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:49Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:49Z" level=error msg="failed to wait for pdftotext" error="exit status 1"
+time="2021-11-09T06:49:49Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/adjuntoPdf?filter=%7B%22aacId%22:1.65266e+06,%22expId%22:2600780,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:49Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:49Z" level=error msg="failed to wait for pdftotext" error="exit status 1"
+time="2021-11-09T06:49:49Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/adjuntoPdf?filter=%7B%22aacId%22:1.652659e+06,%22expId%22:2600780,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:49Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:49Z" level=error msg="failed to wait for pdftotext" error="exit status 1"
+time="2021-11-09T06:49:49Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/adjuntoPdf?filter=%7B%22aacId%22:1.652658e+06,%22expId%22:2600780,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:49Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:49Z" level=error msg="failed to wait for pdftotext" error="exit status 1"
+time="2021-11-09T06:49:49Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/adjuntoPdf?filter=%7B%22aacId%22:1.652656e+06,%22expId%22:2600780,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:49Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:49Z" level=error msg="failed to wait for pdftotext" error="exit status 1"
+time="2021-11-09T06:49:49Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/adjuntoPdf?filter=%7B%22aacId%22:1.650394e+06,%22expId%22:2600780,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:49Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:49Z" level=error msg="failed to wait for pdftotext" error="exit status 1"
+time="2021-11-09T06:49:49Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/adjuntoPdf?filter=%7B%22aacId%22:1.650386e+06,%22expId%22:2600780,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:49Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:49Z" level=error msg="failed to wait for pdftotext" error="exit status 1"
+time="2021-11-09T06:49:49Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37104159,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:49Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:49Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:49Z" level=info msg="getting pdf images" directory=/tmp/extracttext36065564 path=/tmp/extracttext36065564/content
+time="2021-11-09T06:49:49Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:49:50Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:49:50Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37103980,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:50Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:50Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:50Z" level=info msg="getting pdf images" directory=/tmp/extracttext4023312773 path=/tmp/extracttext4023312773/content
+time="2021-11-09T06:49:50Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:49:50Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:49:50Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37031398,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:50Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:50Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:50Z" level=info msg="getting pdf images" directory=/tmp/extracttext4027800401 path=/tmp/extracttext4027800401/content
+time="2021-11-09T06:49:50Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:49:51Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:49:51Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37031146,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:51Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:51Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:51Z" level=info msg="getting pdf images" directory=/tmp/extracttext344608126 path=/tmp/extracttext344608126/content
+time="2021-11-09T06:49:51Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:49:51Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:49:51Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37006817,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:51Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:51Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:51Z" level=info msg="getting pdf images" directory=/tmp/extracttext2663889850 path=/tmp/extracttext2663889850/content
+time="2021-11-09T06:49:51Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:49:51Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:49:51Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37004862,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:51Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:51Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:51Z" level=info msg="getting pdf images" directory=/tmp/extracttext1234910115 path=/tmp/extracttext1234910115/content
+time="2021-11-09T06:49:51Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:49:52Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:49:52Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:%2236966956%22,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:37004862,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:52Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:52Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:52Z" level=info msg="getting pdf images" directory=/tmp/extracttext795733928 path=/tmp/extracttext795733928/content
+time="2021-11-09T06:49:52Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:49:52Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:49:52Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37002098,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:52Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:52Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:52Z" level=info msg="getting pdf images" directory=/tmp/extracttext3173078189 path=/tmp/extracttext3173078189/content
+time="2021-11-09T06:49:52Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:49:52Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:49:52Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37002013,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:52Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:52Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:52Z" level=info msg="getting pdf images" directory=/tmp/extracttext635907025 path=/tmp/extracttext635907025/content
+time="2021-11-09T06:49:52Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:49:53Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:49:53Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37001913,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:53Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:53Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:53Z" level=info msg="getting pdf images" directory=/tmp/extracttext869882245 path=/tmp/extracttext869882245/content
+time="2021-11-09T06:49:53Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:49:53Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:49:53Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:36986300,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:53Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:53Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:53Z" level=info msg="getting pdf images" directory=/tmp/extracttext3192067258 path=/tmp/extracttext3192067258/content
+time="2021-11-09T06:49:53Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:49:53Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:49:54Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:36966956,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:54Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:54Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:54Z" level=info msg="getting pdf images" directory=/tmp/extracttext2884763901 path=/tmp/extracttext2884763901/content
+time="2021-11-09T06:49:54Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:49:54Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:49:54Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:36963713,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:54Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:54Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:54Z" level=info msg="getting pdf images" directory=/tmp/extracttext1885998056 path=/tmp/extracttext1885998056/content
+time="2021-11-09T06:49:54Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:49:54Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:49:54Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:36940864,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:54Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:54Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:54Z" level=info msg="getting pdf images" directory=/tmp/extracttext1685356016 path=/tmp/extracttext1685356016/content
+time="2021-11-09T06:49:54Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:49:54Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:49:55Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:%2236937445%22,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:36940864,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:55Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:55Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:55Z" level=info msg="getting pdf images" directory=/tmp/extracttext1384337743 path=/tmp/extracttext1384337743/content
+time="2021-11-09T06:49:55Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:49:55Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:49:55Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:36937445,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:55Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:55Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:55Z" level=info msg="getting pdf images" directory=/tmp/extracttext3924919297 path=/tmp/extracttext3924919297/content
+time="2021-11-09T06:49:55Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:49:55Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:49:55Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:36936201,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:55Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:55Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:55Z" level=info msg="getting pdf images" directory=/tmp/extracttext1532481754 path=/tmp/extracttext1532481754/content
+time="2021-11-09T06:49:55Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:49:56Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:49:56Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:36909552,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:56Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:56Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:56Z" level=info msg="getting pdf images" directory=/tmp/extracttext3505953004 path=/tmp/extracttext3505953004/content
+time="2021-11-09T06:49:56Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:49:56Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:49:56Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:36906876,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:56Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:56Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:56Z" level=info msg="getting pdf images" directory=/tmp/extracttext2243713454 path=/tmp/extracttext2243713454/content
+time="2021-11-09T06:49:56Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:49:56Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/adjuntoPdf?filter=%7B%22aacId%22:1.519028e+06,%22expId%22:2600780,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:56Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:56Z" level=error msg="failed to wait for pdftotext" error="exit status 1"
+time="2021-11-09T06:49:56Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:36817273,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:56Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:56Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:56Z" level=info msg="getting pdf images" directory=/tmp/extracttext2238737965 path=/tmp/extracttext2238737965/content
+time="2021-11-09T06:49:56Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:49:57Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:49:57Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:36817227,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:57Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:57Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:57Z" level=info msg="getting pdf images" directory=/tmp/extracttext2427419196 path=/tmp/extracttext2427419196/content
+time="2021-11-09T06:49:57Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:49:57Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:49:57Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:36789370,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:57Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:57Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:57Z" level=info msg="getting pdf images" directory=/tmp/extracttext661283254 path=/tmp/extracttext661283254/content
+time="2021-11-09T06:49:57Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:49:57Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:49:57Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:36787961,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:57Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:57Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:57Z" level=info msg="getting pdf images" directory=/tmp/extracttext2172360691 path=/tmp/extracttext2172360691/content
+time="2021-11-09T06:49:57Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:49:58Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:49:58Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:%2236778150%22,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:36787961,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:58Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:58Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:58Z" level=info msg="getting pdf images" directory=/tmp/extracttext815820190 path=/tmp/extracttext815820190/content
+time="2021-11-09T06:49:58Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:49:58Z" level=info msg="reading image text" image="content- a_ .jpg"
+time="2021-11-09T06:49:58Z" level=info msg="reading image text" image=content-Nv_N.png
+time="2021-11-09T06:49:59Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:36787962,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:59Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:59Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:59Z" level=info msg="getting pdf images" directory=/tmp/extracttext2826538516 path=/tmp/extracttext2826538516/content
+time="2021-11-09T06:49:59Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:49:59Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:49:59Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:%2236778150%22,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:36787962,%22ministerios%22:false%7D"
+time="2021-11-09T06:49:59Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:49:59Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:49:59Z" level=info msg="getting pdf images" directory=/tmp/extracttext2007418952 path=/tmp/extracttext2007418952/content
+time="2021-11-09T06:49:59Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:49:59Z" level=info msg="reading image text" image="content- \xb1_ .jpg"
+time="2021-11-09T06:50:00Z" level=info msg="reading image text" image="content-N\xc6_N.png"
+time="2021-11-09T06:50:00Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:36778150,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:50:00Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:50:00Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:50:00Z" level=info msg="getting pdf images" directory=/tmp/extracttext3040615092 path=/tmp/extracttext3040615092/content
+time="2021-11-09T06:50:00Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:50:00Z" level=info msg="reading image text" image="content- \xb1_ .jpg"
+time="2021-11-09T06:50:01Z" level=info msg="reading image text" image="content-N\xc6_N.png"
+time="2021-11-09T06:50:01Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:36529854,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:50:01Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:50:01Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:50:01Z" level=info msg="getting pdf images" directory=/tmp/extracttext1097428449 path=/tmp/extracttext1097428449/content
+time="2021-11-09T06:50:01Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:50:01Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:50:01Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:36529386,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:50:01Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:50:01Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:50:01Z" level=info msg="getting pdf images" directory=/tmp/extracttext3481370109 path=/tmp/extracttext3481370109/content
+time="2021-11-09T06:50:01Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:50:01Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:36453216,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:50:01Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:50:01Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:50:01Z" level=info msg="getting pdf images" directory=/tmp/extracttext1628964679 path=/tmp/extracttext1628964679/content
+time="2021-11-09T06:50:01Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:50:01Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:50:02Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:36452461,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:50:02Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:50:02Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:50:02Z" level=info msg="getting pdf images" directory=/tmp/extracttext1119755450 path=/tmp/extracttext1119755450/content
+time="2021-11-09T06:50:02Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:50:02Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:35681522,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:50:02Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:50:02Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:50:02Z" level=info msg="getting pdf images" directory=/tmp/extracttext4124558545 path=/tmp/extracttext4124558545/content
+time="2021-11-09T06:50:02Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:50:02Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:50:02Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:35679910,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:50:03Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:50:03Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:50:03Z" level=info msg="getting pdf images" directory=/tmp/extracttext691082258 path=/tmp/extracttext691082258/content
+time="2021-11-09T06:50:03Z" level=info msg="reading image text" image="content- \xb1_ .jpg"
+time="2021-11-09T06:50:03Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:50:03Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:35525236,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:50:03Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:50:03Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:50:03Z" level=info msg="getting pdf images" directory=/tmp/extracttext2780387932 path=/tmp/extracttext2780387932/content
+time="2021-11-09T06:50:03Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:50:03Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:50:03Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:35280164,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:50:03Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:50:03Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:50:03Z" level=info msg="getting pdf images" directory=/tmp/extracttext1008595078 path=/tmp/extracttext1008595078/content
+time="2021-11-09T06:50:03Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:50:03Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:50:04Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:35273713,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:50:04Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:50:04Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:50:04Z" level=info msg="getting pdf images" directory=/tmp/extracttext396205959 path=/tmp/extracttext396205959/content
+time="2021-11-09T06:50:04Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:50:04Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:50:04Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:35262858,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:50:04Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:50:04Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:50:04Z" level=info msg="getting pdf images" directory=/tmp/extracttext39979997 path=/tmp/extracttext39979997/content
+time="2021-11-09T06:50:04Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:50:04Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:50:04Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:35261384,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:50:04Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:50:04Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:50:04Z" level=info msg="getting pdf images" directory=/tmp/extracttext3353182804 path=/tmp/extracttext3353182804/content
+time="2021-11-09T06:50:05Z" level=info msg="reading image text" image="content- \x81_ .jpg"
+time="2021-11-09T06:50:08Z" level=info msg="reading image text" image="content-N\x96_N.png"
+time="2021-11-09T06:50:08Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:35202468,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:50:08Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:50:08Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:50:08Z" level=info msg="getting pdf images" directory=/tmp/extracttext4141400731 path=/tmp/extracttext4141400731/content
+time="2021-11-09T06:50:08Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:50:08Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:50:08Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:35202224,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:50:08Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:50:08Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:50:08Z" level=info msg="getting pdf images" directory=/tmp/extracttext2425794870 path=/tmp/extracttext2425794870/content
+time="2021-11-09T06:50:08Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:50:09Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:50:09Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:35191963,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:50:09Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:50:09Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:50:09Z" level=info msg="getting pdf images" directory=/tmp/extracttext2399937694 path=/tmp/extracttext2399937694/content
+time="2021-11-09T06:50:09Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:50:09Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:50:09Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:%2235191260%22,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:35191963,%22ministerios%22:false%7D"
+time="2021-11-09T06:50:09Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:50:09Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:50:09Z" level=info msg="getting pdf images" directory=/tmp/extracttext1489935884 path=/tmp/extracttext1489935884/content
+time="2021-11-09T06:50:09Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:50:09Z" level=info msg="reading image text" image="content- \xe1_ .jpg"
+time="2021-11-09T06:50:10Z" level=info msg="reading image text" image="content-N\xf6_N.png"
+time="2021-11-09T06:50:10Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/cedulas/adjuntoPdf?filter=%7B%22aacId%22:9604,%22expId%22:2600780,%22ministerios%22:false%7D"
+time="2021-11-09T06:50:10Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:50:10Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:50:10Z" level=info msg="getting pdf images" directory=/tmp/extracttext1037877716 path=/tmp/extracttext1037877716/content
+time="2021-11-09T06:50:10Z" level=info msg="reading image text" image="content- \x01_ .jpg"
+time="2021-11-09T06:50:10Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:50:10Z" level=info msg="reading image text" image="content-N\x16_N.png"
+time="2021-11-09T06:50:11Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:35191957,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:50:11Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:50:11Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:50:11Z" level=info msg="getting pdf images" directory=/tmp/extracttext3447250437 path=/tmp/extracttext3447250437/content
+time="2021-11-09T06:50:11Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:50:11Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:50:11Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:%2235191260%22,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:35191957,%22ministerios%22:false%7D"
+time="2021-11-09T06:50:11Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:50:11Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:50:11Z" level=info msg="getting pdf images" directory=/tmp/extracttext3957843894 path=/tmp/extracttext3957843894/content
+time="2021-11-09T06:50:11Z" level=info msg="reading image text" image="content- Q_ .jpg"
+time="2021-11-09T06:50:11Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:50:12Z" level=info msg="reading image text" image=content-Nf_N.png
+time="2021-11-09T06:50:12Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:35191260,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:50:12Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:50:12Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:50:12Z" level=info msg="getting pdf images" directory=/tmp/extracttext3151724768 path=/tmp/extracttext3151724768/content
+time="2021-11-09T06:50:12Z" level=info msg="reading image text" image="content- \x11_ .jpg"
+time="2021-11-09T06:50:12Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:50:13Z" level=info msg="reading image text" image="content-N&_N.png"
+time="2021-11-09T06:50:13Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:35191128,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:50:13Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:50:13Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:50:13Z" level=info msg="getting pdf images" directory=/tmp/extracttext2715161420 path=/tmp/extracttext2715161420/content
+time="2021-11-09T06:50:13Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:50:13Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:50:13Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:35191018,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:50:13Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:50:13Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:50:13Z" level=info msg="getting pdf images" directory=/tmp/extracttext727569834 path=/tmp/extracttext727569834/content
+time="2021-11-09T06:50:13Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:50:13Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:50:13Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:35141396,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:50:13Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:50:14Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:50:14Z" level=info msg="getting pdf images" directory=/tmp/extracttext2359134584 path=/tmp/extracttext2359134584/content
+time="2021-11-09T06:50:14Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:50:14Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:50:14Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:35140764,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:50:14Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:50:14Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:50:14Z" level=info msg="getting pdf images" directory=/tmp/extracttext3397210255 path=/tmp/extracttext3397210255/content
+time="2021-11-09T06:50:14Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:50:14Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:50:14Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:35139472,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:50:14Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:50:14Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:50:14Z" level=info msg="getting pdf images" directory=/tmp/extracttext2479542459 path=/tmp/extracttext2479542459/content
+time="2021-11-09T06:50:14Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:50:15Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:50:15Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:35139276,%22expId%22:2600780,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:50:15Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:50:15Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:50:15Z" level=info msg="getting pdf images" directory=/tmp/extracttext2017469252 path=/tmp/extracttext2017469252/content
+time="2021-11-09T06:50:15Z" level=info msg="reading image text" image="content- Q_ .jpg"
+time="2021-11-09T06:50:17Z" level=info msg="reading image text" image=content-Nf_N.png
+time="2021-11-09T06:50:17Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/adjuntoPdf?filter=%7B%22aacId%22:667443,%22expId%22:2600780,%22ministerios%22:false%7D"
+time="2021-11-09T06:50:17Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:50:17Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:50:17Z" level=info msg="getting pdf images" directory=/tmp/extracttext1467538270 path=/tmp/extracttext1467538270/content
+time="2021-11-09T06:50:18Z" level=info msg="reading image text" image="content- 1_ .jpg"
+time="2021-11-09T06:50:18Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:50:22Z" level=info msg="reading image text" image=content-NF_N.png
+time="2021-11-09T06:50:22Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:50:22Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:50:22Z" level=info msg="getting pdf images" directory=/tmp/extracttext1794043979 path=/tmp/extracttext1794043979/content
+time="2021-11-09T06:50:22Z" level=info msg="reading image text" image="content- _ .jpg"
++ pushd ts
++ yarn run ts-node create-index.ts /tmp/juscaba/182908-2020-0.json /tmp/juscaba/182908-2020-0-index.json
+warning package.json: No license field
++ popd
++ cp /tmp/juscaba/182908-2020-0-index.json /tmp/juscaba/182908-2020-0.json /app/web/public/data
++ (( i++ ))
++ (( i<=2 ))
++ exp=182908/2020-1
++ exp_filename=182908-2020-1
++ ./builder -json=/tmp/juscaba/182908-2020-1.json -pdfs=/tmp/juscaba/pdfs -expediente=182908/2020-1 -images=true '-blacklist=(cedulas.*667442)|(actuaciones.*349676)'
+time="2021-11-09T06:50:29Z" level=info msg=arguments expediente=182908/2020-1 json=/tmp/juscaba/182908-2020-1.json parseImages=true pdfs=/tmp/juscaba/pdfs
+time="2021-11-09T06:50:29Z" level=info msg="Expediente found!" expediente=182908/2020-1
+time="2021-11-09T06:50:29Z" level=info msg="getting actuaciones" page=0
+time="2021-11-09T06:50:29Z" level=info msg="getting actuaciones" page=1
+time="2021-11-09T06:50:29Z" level=info msg=finished actuaciones=4 expediente="&{0xc00009a000 [0xc0001e8f00 0xc0001e8fa0 0xc0001e9040 0xc0001e90e0]}"
+time="2021-11-09T06:50:29Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37667586,%22expId%22:2726765,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:50:29Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:50:29Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:50:29Z" level=info msg="getting pdf images" directory=/tmp/extracttext1960077570 path=/tmp/extracttext1960077570/content
+time="2021-11-09T06:50:29Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:50:30Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:50:30Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37664952,%22expId%22:2726765,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:50:30Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:50:30Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:50:30Z" level=info msg="getting pdf images" directory=/tmp/extracttext1933245223 path=/tmp/extracttext1933245223/content
+time="2021-11-09T06:50:30Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:50:30Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:50:30Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37656855,%22expId%22:2726765,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:50:30Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:50:30Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:50:30Z" level=info msg="getting pdf images" directory=/tmp/extracttext1464301846 path=/tmp/extracttext1464301846/content
+time="2021-11-09T06:50:30Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:50:31Z" level=info msg="reading image text" image=content-N_N.png
+time="2021-11-09T06:50:31Z" level=info msg="skipping url" url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/actuaciones/pdf?datos=%7B%22actId%22:37657965,%22expId%22:2726765,%22esNota%22:false,%22cedulaId%22:null,%22ministerios%22:false%7D"
+time="2021-11-09T06:50:31Z" level=info msg="getting pdf plain text"
+time="2021-11-09T06:50:31Z" level=info msg="getting pdf images text"
+time="2021-11-09T06:50:31Z" level=info msg="getting pdf images" directory=/tmp/extracttext4144633834 path=/tmp/extracttext4144633834/content
+time="2021-11-09T06:50:31Z" level=info msg="reading image text" image="content- _ .jpg"
+time="2021-11-09T06:50:31Z" level=info msg="reading image text" image="content- a_ .jpg"
+time="2021-11-09T06:50:31Z" level=info msg="reading image text" image=content-Nv_N.png
++ pushd ts
++ yarn run ts-node create-index.ts /tmp/juscaba/182908-2020-1.json /tmp/juscaba/182908-2020-1-index.json
+warning package.json: No license field
++ popd
++ cp /tmp/juscaba/182908-2020-1-index.json /tmp/juscaba/182908-2020-1.json /app/web/public/data
++ (( i++ ))
++ (( i<=2 ))
++ yarn build
+(node:1628) [DEP0148] DeprecationWarning: Use of deprecated folder mapping "./" in the "exports" field module resolution of the package at /app/node_modules/postcss-safe-parser/node_modules/postcss/package.json.
+Update this package.json to use a subpath pattern like "./*".
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+Why you should do it regularly:
+https://github.com/browserslist/browserslist#browsers-data-updating
++ rm -rf /tmp/juscaba/web/build
++ chmod -R 777 build
++ mv build /tmp/juscaba/web/
+To github.com:odia/srfp-documentos.github.io.git
+   94b84fa..dd843bc  gh-pages -> gh-pages
++++ dirname -- ./run.sh
+++ cd -- .
+++ pwd
++ SCRIPT_DIR=/app
++ mkdir -p /tmp/juscaba/pdfs
++ mkdir -p /tmp/juscaba/web/public/data
++ (( i=1 ))
++ (( i<=2 ))
++ exp=182908/2020-0
++ exp_filename=182908-2020-0
++ ./builder -json=/tmp/juscaba/web/public/data/182908-2020-0.json -pdfs=/tmp/juscaba/pdfs -expediente=182908/2020-0 -images=false '-blacklist=(cedulas.*667442)|(actuaciones.*349676)'
+time="2021-11-10T06:34:26Z" level=info msg=arguments expediente=182908/2020-0 json=/tmp/juscaba/web/public/data/182908-2020-0.json parseImages=false pdfs=/tmp/juscaba/pdfs
+time="2021-11-10T06:34:56Z" level=warning msg="Failed to get expediente" error="Post \"https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/lista\": dial tcp: i/o timeout" expediente=182908/2020-0 url="https://eje.juscaba.gob.ar/iol-api/api/public/expedientes/lista"
