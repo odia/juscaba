@@ -114,7 +114,7 @@ func pdftohtml(p string) error {
 }
 
 func readImageText(filename string) (string, error) {
-	cmd := exec.Command("tesseract", "-c", "-l", "spa", filename, "-")
+	cmd := exec.Command("tesseract", "-l", "spa", filename, "-")
 	stderr, err := cmd.StderrPipe()
 	if err != nil {
 		log.WithFields(log.Fields{
