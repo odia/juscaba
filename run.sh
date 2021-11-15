@@ -15,6 +15,8 @@ do
     popd
 done
 
+
+sed -i "s~%HOMEPAGE%~${URL}~g" web/package.json
 yarn build
 
 rm -rf /tmp/juscaba/build
