@@ -22,13 +22,14 @@ type arguments struct {
 }
 
 func parseArguments() (*arguments, error) {
-	var pdfsPath, expId string
+	var pdfsPath, expId, documentosURL string
 	var err error
 	args := arguments{}
 	flag.StringVar(&args.blacklistRegex, "blacklist", "", "regex of urls to ignore (e.g.: \"(cedulas.*667442)|(actuaciones.*349676)\")")
 	flag.StringVar(&args.jsonPath, "json", "", "json destination path")
 	flag.StringVar(&pdfsPath, "pdfs", "", "pdfs destination path")
 	flag.StringVar(&expId, "expediente", "", "expediente identifier (e.g.: \"182908/2020-0\")")
+	flag.StringVar(&documentosURL, "documentosURL", "", "URL for static documents (e.g.: \"http://srfp-documents.odia.legal/\")")
 	flag.BoolVar(&args.parseImages, "images", true, "apply ocr")
 	flag.Parse()
 
@@ -39,7 +40,7 @@ func parseArguments() (*arguments, error) {
 		"parseImages": args.parseImages,
 	}).Print("arguments")
 
-	args.fm = &shared.FileManager{Directory: pdfsPath}
+	args.fm = &shared.FileManager{Directory: pdfsPath, DocumentosURL: documentosURL}
 	args.exp, err = crawler.GetExpediente(expId)
 	if err != nil {
 		return nil, err

@@ -13,6 +13,7 @@ jobs:
       EXPEDIENTES_JSON: '[{"id":"Sistema de Reconocimiento Facial","file":"182908-2020-0"},{"id":"Recusación","file":"182908-2020-1"}]'
       CNAME: srfp-expediente.odia.legal
       COMMIT_AUTHOR: ODIA <odia@odia.legal>
+      DOCUMENTOS_URL: https://srfp-documentos.odia.legal/
       READ_IMAGES: true
     steps:
       - name: Checkout main repo
@@ -30,7 +31,7 @@ jobs:
       - name: Build the Docker image
         run: docker build . --file Dockerfile --tag juscaba
       - name: Run the container
-        run: docker run -v $(pwd):/tmp/juscaba juscaba ./run.sh $EXPEDIENTES
+        run: docker run -v $(pwd):/tmp/juscaba --env "DOCUMENTOS_URL=${DOCUMENTOS_URL}" juscaba ./run.sh $EXPEDIENTES
       - name: Create expedientes.json
         run: echo "${EXPEDIENTES_JSON}" > build/data/expedientes.json
       - name: Create CNAME
