@@ -31,7 +31,7 @@ jobs:
       - name: Build the Docker image
         run: docker build . --file Dockerfile --tag juscaba
       - name: Run the container
-        run: docker run -v $(pwd):/tmp/juscaba --env "URL=${URL}" juscaba ./run.sh $EXPEDIENTES
+        run: docker run -v $(pwd):/tmp/juscaba --env "URL=${URL}" --env "EXPEDIENTES=${EXPEDIENTES}" juscaba ./run.sh
       - name: Create expedientes.json
         run: echo "${EXPEDIENTES_JSON}" > build/data/expedientes.json
       - name: Create CNAME

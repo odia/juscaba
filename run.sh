@@ -3,9 +3,8 @@ set -Eeux
 
 mkdir -p /tmp/juscaba/pdfs
 mkdir -p public/data
-for ((i=1; i<=$#; i++))
+for exp in $EXPEDIENTES
 do
-    exp=${!i}
     exp_filename=${!i/\//-}
 
     ./builder "-json=public/data/${exp_filename}.json" -pdfs=/tmp/juscaba/pdfs "-expediente=${exp}" -images=${READ_IMAGES:-true} "-blacklist=${BLACKLIST_REGEX:-}"
